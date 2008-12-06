@@ -12,3 +12,8 @@ sortSuspend.py
 --------------
 
 This script will turn your "Current -> Suspend" menu into a submenu listing all tags that are currently suspended, so that you can "sort" cards into groups that you might want to re-activate later.
+
+Installation
+============
+
+Installation - as with all anki plugins - is simple as pie: Just copy them into the plugin folder (~/.anki/plugins on linux - use 'anki' -> 'plugins' -> 'open plugin folder' to see it on all systems)
