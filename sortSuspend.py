@@ -14,6 +14,7 @@ def setTagCallable(tag):
 def createTagsMenu():
     mw.tagsMenu = QMenu("Suspend", mw)
     mw.tagsMenu.setIcon(QIcon(":icons/media-playback-pause.png"))
+    mw.tagsMenu.setText = mw.tagsMenu.setTitle
     updateMenu()
 
 def updateMenu():
