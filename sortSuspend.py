@@ -18,9 +18,13 @@ def createTagsMenu():
     updateMenu()
 
 def updateMenu():
-    mw.tagsMenu.clear()
-    for t in parseTags(mw.deck.suspended):
-        mw.tagsMenu.addAction(t, setTagCallable(t))
+    try:
+        mw.tagsMenu.clear()
+        for t in parseTags(mw.deck.suspended):
+            mw.tagsMenu.addAction(t, setTagCallable(t))
+    except AttributeError:
+        # mw.deck doesn't exist yet. wait for the menu to be invoked.
+        pass
 
 def tagCurrentCard(tag):
     mw.deck.setUndoStart(_("Suspend"))
