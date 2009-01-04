@@ -42,8 +42,8 @@ def replaceMenu():
     createTagsMenu()
 
     # insert it into the "current" menu
-    mw.mainWin.menuCurrent.insertMenu(mw.mainWin.actionSuspendCard, mw.tagsMenu)
-    mw.mainWin.menuCurrent.removeAction(mw.mainWin.actionSuspendCard)
+    mw.mainWin.menuEdit.insertMenu(mw.mainWin.actionSuspendCard, mw.tagsMenu)
+    mw.mainWin.menuEdit.removeAction(mw.mainWin.actionSuspendCard)
 
     # the app should do the same things to the menu as it would to the old button
     mw.mainWin.actionSuspendCard = mw.tagsMenu
